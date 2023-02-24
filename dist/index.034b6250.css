@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
 }
 
 .logo {
@@ -71,6 +72,97 @@ body {
 
 .navbar .navbar-language:hover {
   background-color: #eee;
+}
+
+ul, li {
+  padding: 5px;
+  list-style: none;
+}
+
+.land .slider {
+  width: 100%;
+  margin: 0 20px 0 80px;
+}
+
+.slider-title {
+  text-align: center;
+}
+
+.slides {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.slides .character {
+  opacity: 0;
+  justify-self: center;
+  position: absolute;
+}
+
+.land .slides {
+  justify-content: left;
+  overflow: auto;
+}
+
+.land .slides::-webkit-scrollbar {
+  width: 8px;
+}
+
+.land .slides::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.land .slides::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.land .slides::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.landscape img {
+  height: 300px;
+}
+
+.character img {
+  width: 150px;
+}
+
+.slides .character:first-child {
+  z-index: 1;
+}
+
+.menu {
+  justify-content: center;
+  margin-top: 230px;
+  display: flex;
+}
+
+.menu .option {
+  margin: 0 10px;
+}
+
+.menu .option a {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #fff;
+  background: #999;
+  border-radius: 50%;
+  text-decoration: none;
+  display: block;
+}
+
+.menu .option a:hover {
+  background: #333;
+}
+
+.slides .character:target {
+  opacity: 1;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */
