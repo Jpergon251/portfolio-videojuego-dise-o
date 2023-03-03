@@ -3,7 +3,13 @@ body{
     margin: 0;
   width: 100%;
   }
-
+section{
+  width: 80%;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 10px auto;
+  background-color: #fff;
+}
 footer{
   margin: 20px 0;
   width: 100%;
@@ -85,26 +91,43 @@ ul, li{
   list-style: none;
   padding: 5px;
 }
-h1{
+.sinopsis {
+  .description{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+  }
+}
+.titles{
+  padding: 0.5rem;
   text-align: center;
 }
 .slider-title{
   text-align: center;
 }
 .slides {
-  border-radius: 12px;
-  margin: 10px auto;
-  background-color: #fff;
-  width: 80%;
   display: flex;
   justify-content: center;
   position: relative;
 }
 
-.slides .character {
-  justify-self: center;
-  position: static;
-  opacity: 20%;
+.slides {
+  .character {
+    justify-self: center;
+    position: relative;
+    opacity: 20%;
+  }
+}
+.land{
+  img{
+    height: 800px;
+  }
+}
+.character{
+  img{
+    height: 200px;
+  }
 }
 .land, .char-slider{
   border-radius: 15px;
@@ -113,10 +136,12 @@ h1{
   margin: 20px auto;
   width: 80%;
 }
-.land .slides{
-  width: 97%;
-  justify-content: left;
-  overflow: auto;
+.land{
+  .slides{
+    width: 97%;
+    justify-content: left;
+    overflow: auto;
+  }
 }
 .land .slides::-webkit-scrollbar {
   width: 8px;
@@ -143,34 +168,36 @@ h1{
 .name{
   text-align: center;
 }
+.land{
+  .name{
+    font-size: 32px;
+  }
+}
 
-.menu {
+.menu{
   box-shadow: 0px 0px 5px 0px #999;
   border-radius: 12px;
   margin: 10 auto;
   width: fit-content;
-  background-color: #fff;
   display: flex;
   justify-content: center;
-}
+  .option {
+    margin: 0 10px;
+    a {
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #999;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    a:hover {
+      background: #333;
+    }
 
-.menu .option {
-  margin: 0 10px;
-}
-
-.menu .option a {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #999;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-}
-
-.menu .option a:hover {
-  background: #333;
+  }
 }
 
 .slides .character:target {
@@ -188,21 +215,22 @@ h1{
   z-index: -1;
 }
 
-.video-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  color: #fff;
-  text-align: center;
-
-  h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+.banda-sonora{
+  
+  audio {
+    color: #444;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 500px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:inset 0px 0px 10px 5px #0000001a;
   }
-
-  p {
-    font-size: 24px;
+  figcaption{
+    margin: 20;
+    font-size: 20px;
+    text-align: center;
   }
 }

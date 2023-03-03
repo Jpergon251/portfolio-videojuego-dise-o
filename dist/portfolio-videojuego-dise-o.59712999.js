@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"adihR":[function(require,module,exports) {
+})({"eYXra":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "87abe57c34601e62";
+module.bundle.HMR_BUNDLE_ID = "7055c94b59712999";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -556,8 +556,8 @@ function hmrAccept(bundle, id) {
     });
 }
 
-},{}],"2hD8O":[function(require,module,exports) {
+},{}],"4M6V8":[function(require,module,exports) {
 
-},{}]},["adihR","2hD8O"], "2hD8O", "parcelRequire265b")
+},{}]},["eYXra","4M6V8"], "4M6V8", "parcelRequire265b")
 
-//# sourceMappingURL=assets.34601e62.js.map
+//# sourceMappingURL=portfolio-videojuego-dise-o.59712999.js.map

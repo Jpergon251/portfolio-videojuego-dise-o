@@ -30,46 +30,65 @@
       <video autoplay muted loop class="bg-video">
         <source src="./assets/images/video-bicicleta.mp4" type="video/mp4">
       </video>
-      <h1>Bienvenidos a mi juego BIKING CADIZ</h1>
+      <section class="titles">
+      <h1>Bienvenido a mi juego BIKING CADIZ</h1>
+      
+      </section>
+
+      <section class="sinopsis">
+        <h2 class="slider-title">¿De que trata?</h2>
+        <p class="description">Este juego trata sobre Lorena, el personaje principal, que trata de recorrer todas las calles de cadiz para llegar al IES Rafael Alberti.
+          Pero no todo es tan sencillo, todo se complica cuando aparecen sus peores enemigos, los cuales tratan de evitar que lleguen a su destino.
+        </p>
+      </section>
+
       <section class="char-slider">
-        <h2 class="slider-title">Personajes</h2>
+        <h2 class="slider-title">Conoce a nuestros protagonistas</h2>
         
         <ul class="slides">
           
           <li id="slide1" class="character">
-            <h3 class="name">José</h3>
-            <img src="./assets/images/jose.png" alt="personaje 1">
+            <h3 class="name">Lorena</h3>
+            <img srcset="./assets/images/lorena-20.png 150w,
+                          ./assets/images/lorena-60.png 300w,
+                          ./assets/images/lorena.png 400w" 
+              sizes="(max-width: 200px) 80px,
+                      (max-width: 400px) 125px,
+                      200px"
+              src="./assets/images/lorena.png"
+              alt="personaje 3">
           </li>
           <li id="slide2" class="character">
             <h3 class="name">Carolina</h3>
-            <img srcset="./assets/images/carolina-20.png 150h,
-                          ./assets/images/carolina-60.png 300h,
-                          ./assets/images/carolina.png 400h" 
-              sizes="(max-height: 150px) 110px,
-                      (max-height: 300px) 260px,
-                      400px"
+            <img srcset="./assets/images/carolina-20.png 150w,
+                          ./assets/images/carolina-60.png 300w,
+                          ./assets/images/carolina.png 400w" 
+              sizes="(max-width: 200px) 80px,
+                      (max-width: 400px) 125px,
+                      200px"
               src="./assets/images/carolina.png"
               alt="personaje 2">
           </li>
           <li id="slide3" class="character">
-            <h3 class="name">Lorena</h3>
-            <img srcset="./assets/images/lorena-20.png 150h,
-                          ./assets/images/lorena-60.png 300h,
-                          ./assets/images/lorena.png 400h" 
-              sizes="(max-height: 150px) 110px,
-                      (max-height: 300px) 260px,
-                      400px"
-              src="./assets/images/lorena.png"
-              alt="personaje 3">
+            <h3 class="name">José</h3>
+            <img srcset="./assets/images/jose-20.png 150w,
+                          ./assets/images/jose-60.png 300w,
+                          ./assets/images/jose.png 400w" 
+              sizes="(max-width: 200px) 80px,
+                      (max-width: 400px) 125px,
+                      200px"
+              src="./assets/images/jose.png"
+              alt="personaje 1">
+            
           </li>
           <li id="slide4" class="character">
             <h3 class="name">Simón</h3>
-            <img srcset="./assets/images/simon-20.png 150h,
-                          ./assets/images/simon-60.png 300h,
-                          ./assets/images/simon.png 400h" 
-              sizes="(max-height: 150px) 110px,
-                      (max-height: 300px) 260px,
-                      400px"
+            <img srcset="./assets/images/simon-20.png 150w,
+                          ./assets/images/simon-60.png 300w,
+                          ./assets/images/simon.png 400w" 
+              sizes="(max-width: 200px) 80px,
+                      (max-width: 400px) 125px,
+                      200px"
               src="./assets/images/simon.png"
               alt="personaje 4">
           </li>
@@ -93,23 +112,53 @@
       </section>
       
       <section class="land slider">
-        <h2 class="slider-title">Escenarios</h2>
+        <h2 class="slider-title">Observa nuestros Escenarios</h2>
         <ul class="slides">
           <li id="slide5" class="landscape">
-            <img src="./assets/images/paisaje1.png" alt="escenario 1">
+            <h3 class="name">Catedral de Cádiz</h3>
+            <picture>
+              <source media="(min-width: 401px)" srcset="./assets/images/paisaje1.png">
+              <source media="(max-width: 400px)" srcset="./assets/images/paisaje1-720.png">
+              <img src="./assets/images/paisaje1.png" alt="paisaje 1">
+            </picture>
           </li>
           <li id="slide6" class="landscape">
-            <img src="./assets/images/paisaje2.png" alt="escenario 2">
+            <h3 class="name">Puertas de Tierra</h3>
+            <picture>
+              <source media="(min-width: 401px)" srcset="./assets/images/paisaje2.png">
+              <source media="(max-width: 400px)" srcset="./assets/images/paisaje2-720.png">
+              <img src="./assets/images/paisaje2.png" alt="paisaje 1">
+            </picture>
           </li>
           <li id="slide7" class="landscape">
-            <img src="./assets/images/paisaje3.png" alt="escenario 3">
+            <h3 class="name">Teatro Manuel de Falla</h3>
+            <picture>
+              <source media="(min-width: 401px)" srcset="./assets/images/paisaje3.png">
+              <source media="(max-width: 400px)" srcset="./assets/images/paisaje3-720.png">
+              <img src="./assets/images/paisaje3.png" alt="paisaje 1">
+            </picture>
           </li>
           <li id="slide8" class="landscape">
-            <img src="./assets/images/paisaje4.png" alt="escenario 4">
+            <h3 class="name">IES Rafael Alberti</h3>
+            <picture>
+              <source media="(min-width: 401px)" srcset="./assets/images/paisaje4.png">
+              <source media="(max-width: 400px)" srcset="./assets/images/paisaje4-720.png">
+              <img src="./assets/images/paisaje4.png" alt="paisaje 1">
+            </picture>
           </li>
         </ul>
       </section>
-      
+      <section class="banda-sonora">
+        <h2 class="slider-title">Descarga nuestra banda sonora</h2>
+        <figure>
+          <figcaption>Shaolin Dub: Culturez</figcaption>
+          <audio controls>
+            <source src="./assets/musica/ShaolinDub-Culturez.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento audio.
+          </audio>
+          
+        </figure>
+      </section>
     </main>
     <footer>
       <p>Derechos reservados &copy; 2023</p>
