@@ -27,39 +27,71 @@
       </nav>
     </header>
     <main>
-      <section class="char slider">
+      <video autoplay muted loop class="bg-video">
+        <source src="./assets/images/video-bicicleta.mp4" type="video/mp4">
+      </video>
+      <h1>Bienvenidos a mi juego BIKING CADIZ</h1>
+      <section class="char-slider">
         <h2 class="slider-title">Personajes</h2>
+        
         <ul class="slides">
+          
           <li id="slide1" class="character">
+            <h3 class="name">José</h3>
             <img src="./assets/images/jose.png" alt="personaje 1">
           </li>
           <li id="slide2" class="character">
-            <img src="./assets/images/carolina.png" alt="personaje 2">
+            <h3 class="name">Carolina</h3>
+            <img srcset="./assets/images/carolina-20.png 150h,
+                          ./assets/images/carolina-60.png 300h,
+                          ./assets/images/carolina.png 400h" 
+              sizes="(max-height: 150px) 110px,
+                      (max-height: 300px) 260px,
+                      400px"
+              src="./assets/images/carolina.png"
+              alt="personaje 2">
           </li>
           <li id="slide3" class="character">
-            <img src="./assets/images/lorena.png" alt="personaje 3">
+            <h3 class="name">Lorena</h3>
+            <img srcset="./assets/images/lorena-20.png 150h,
+                          ./assets/images/lorena-60.png 300h,
+                          ./assets/images/lorena.png 400h" 
+              sizes="(max-height: 150px) 110px,
+                      (max-height: 300px) 260px,
+                      400px"
+              src="./assets/images/lorena.png"
+              alt="personaje 3">
           </li>
           <li id="slide4" class="character">
-            <img src="./assets/images/simon.png" alt="personaje 4">
+            <h3 class="name">Simón</h3>
+            <img srcset="./assets/images/simon-20.png 150h,
+                          ./assets/images/simon-60.png 300h,
+                          ./assets/images/simon.png 400h" 
+              sizes="(max-height: 150px) 110px,
+                      (max-height: 300px) 260px,
+                      400px"
+              src="./assets/images/simon.png"
+              alt="personaje 4">
           </li>
         </ul>
+        <section class="menu-slider">
+          <ul class="menu">
+            <li class="option">
+              <a href="#slide1">1</a>
+            </li>
+            <li class="option">
+              <a href="#slide2">2</a>
+            </li>
+            <li class="option">
+              <a href="#slide3">3</a>
+            </li>
+            <li class="option">
+              <a href="#slide4">4</a>
+            </li>
+          </ul>
+        </section>
       </section>
-      <section class="menu-slider">
-        <ul class="menu">
-          <li class="option">
-            <a href="#slide1">1</a>
-          </li>
-          <li class="option">
-            <a href="#slide2">2</a>
-          </li>
-          <li class="option">
-            <a href="#slide3">3</a>
-          </li>
-          <li class="option">
-            <a href="#slide4">4</a>
-          </li>
-        </ul>
-      </section>
+      
       <section class="land slider">
         <h2 class="slider-title">Escenarios</h2>
         <ul class="slides">
